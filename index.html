@@ -16,8 +16,15 @@
         .p-2 {
             padding: .5rem;
         }
+        .px-2 {
+            padding-left: .5rem;
+            padding-right: .5rem;
+        }
         .justify-between {
             justify-content: space-between;
+        }
+        .items-center {
+            align-items: center;
         }
         .block {
             display: block;
@@ -29,22 +36,21 @@
         <div class="flex cte-separator p-2">
             <div><textarea class="p-2" onkeyup="cteUpdateText()">you text</textarea></div>
         </div>
-        <div class="cte-separator flex p-2 justify-between">
-            <div>
+        <div class="cte-separator flex justify-between items-center">
+            <div class="px-2">
                 <select name="choose-color" class="block" onchange="customTextEditor('color', this);">
                     <option value="000000" selected>Noir</option>
                     <option value="e28743">Brun</option>
                     <option value="76b5c5">Bleu</option>
                     <option value="154c79">Violet</option>
                 </select>
-                Couleur
             </div>
-            <div><i class="cte-text-edit ri-bold" onclick="customTextEditor('font-weight', 'bold');" ></i></div>
-            <div><i class="cte-text-edit ri-italic" onclick="customTextEditor('font-style', 'italic');"></i></div>
-            <div><i class="cte-text-edit ri-align-left" onclick="customTextEditor('text-align', 'left');"></i></div>
-            <div><i class="cte-text-edit ri-align-center" onclick="customTextEditor('text-align', 'center');"></i></div>
-            <div><i class="cte-text-edit ri-align-right" onclick="customTextEditor('text-align', 'right');"></i></div>
-            <div><i class="cte-text-edit ri-align-justify" onclick="customTextEditor('text-align', 'justify');"></i></div>
+            <div class="cte-text-edit"><i class="ri-bold" onclick="customTextEditor('font-weight', 'bold');" ></i></div>
+            <div class="cte-text-edit"><i class="ri-italic" onclick="customTextEditor('font-style', 'italic');"></i></div>
+            <div class="cte-text-edit"><i class="ri-align-left" onclick="customTextEditor('text-align', 'left');"></i></div>
+            <div class="cte-text-edit"><i class="ri-align-center" onclick="customTextEditor('text-align', 'center');"></i></div>
+            <div class="cte-text-edit"><i class="ri-align-right" onclick="customTextEditor('text-align', 'right');"></i></div>
+            <div class="cte-text-edit"><i class="ri-align-justify" onclick="customTextEditor('text-align', 'justify');"></i></div>
         </div>
         <div class="flex cte-separator p-2">
             <div>Taille de la police</div>

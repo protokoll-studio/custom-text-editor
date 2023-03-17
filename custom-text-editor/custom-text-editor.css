@@ -21,6 +21,9 @@
     border-radius: 100%;
     border: 1px solid grey;
 }
+#cte .cte-text-edit {
+    border-left: 1px solid var(--cte-border-color);
+}
 #cte .cte-text-edit:hover {
     cursor: pointer;
     opacity: .7;
