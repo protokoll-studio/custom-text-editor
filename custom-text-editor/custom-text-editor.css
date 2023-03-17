@@ -1,0 +1,37 @@
+:root {
+    --cte-border-color: grey;
+}
+#cte {
+    border: 1px solid var(--cte-border-color);
+    background-color: #fcfcfc;
+    width: 350px;
+    font-size: 18px;
+}
+#cte .cte-separator {
+    border-bottom: 1px solid var(--cte-border-color);
+}
+#cte textarea {
+    width: calc(350px - 2.5rem);
+    resize: none;
+}
+#cte .choose-color {
+    display: block;
+    min-height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    border: 1px solid grey;
+}
+#cte .cte-text-edit:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+#cte-result {
+    width: 350px;
+    height: 20px;
+    border: 1px solid grey;
+    display: block;
+}
+#cte .cte-reset:hover {
+    cursor: pointer;
+    opacity: .7;
+}

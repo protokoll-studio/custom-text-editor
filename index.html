@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./custom-text-editor/custom-text-editor.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="custom-text-editor/circletype.min.js"></script>
+	<script src="custom-text-editor/fittext.js"></script>
+
+    <style>
+        /* To replace with tailwind */
+        .flex {
+            display: flex;
+        }
+        .p-2 {
+            padding: .5rem;
+        }
+        .justify-between {
+            justify-content: space-between;
+        }
+        .block {
+            display: block;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="cte">
+        <div class="flex cte-separator p-2">
+            <div><textarea class="p-2" onkeyup="cteUpdateText()">you text</textarea></div>
+        </div>
+        <div class="cte-separator flex p-2 justify-between">
+            <div>
+                <select name="choose-color" class="block" onchange="customTextEditor('color', this);">
+                    <option value="000000" selected>Noir</option>
+                    <option value="e28743">Brun</option>
+                    <option value="76b5c5">Bleu</option>
+                    <option value="154c79">Violet</option>
+                </select>
+                Couleur
+            </div>
+            <div><i class="cte-text-edit ri-bold" onclick="customTextEditor('font-weight', 'bold');" ></i></div>
+            <div><i class="cte-text-edit ri-italic" onclick="customTextEditor('font-style', 'italic');"></i></div>
+            <div><i class="cte-text-edit ri-align-left" onclick="customTextEditor('text-align', 'left');"></i></div>
+            <div><i class="cte-text-edit ri-align-center" onclick="customTextEditor('text-align', 'center');"></i></div>
+            <div><i class="cte-text-edit ri-align-right" onclick="customTextEditor('text-align', 'right');"></i></div>
+            <div><i class="cte-text-edit ri-align-justify" onclick="customTextEditor('text-align', 'justify');"></i></div>
+        </div>
+        <div class="flex cte-separator p-2">
+            <div>Taille de la police</div>
+            <div class="p-2">
+                <input type="range" min="10" max="50" value="18" class="slider" onchange="customTextEditor('font-size', this)">
+              </div>
+        </div>
+        <div class="flex cte-separator p-2">
+            <div>
+                Courbure du texte<br>
+                <select class="cte-courbureType" onchange="customTextEditor('circleType', this);">
+                    <option value="none" selected>Pas de courbure</option>
+                    <option value="top">Courbé vers le haut</option>
+                    <option value="bottom">Courbé vers le bas</option>
+                </select>
+            </div>
+            <div class="p-2">
+                <input type="range" min="0" max="360" value="180" class="cte-courbureSlide" onchange="customTextEditor('courbure', this)" disabled>
+              </div>
+        </div>
+
+        <div class="flex p-2">
+            <span onclick="cteReset()" class="cte-reset">Réinitialiser</span>
+        </div>
+    </div>
+
+    <div id="cte-result"></div>
+
+    <!-- CTE SCRIPT -->
+	<script src="custom-text-editor/custom-text-editor.js"></script>
+  </body>
+</html>
