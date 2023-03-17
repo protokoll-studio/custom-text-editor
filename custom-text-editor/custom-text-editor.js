@@ -4,6 +4,18 @@ function customTextEditor(attr, value) {
     if (attr == 'color') {
         $('#cte-result').css(attr, '#' + $(value).val());
     } 
+    if (attr == 'font-weight') {
+        $('.cte-weight').toggleClass('cte-weight--disabled');
+        if ($('.cte-weight').hasClass('cte-weight--disabled')) {
+            value = 'normal';
+        }
+    }
+    if (attr == 'font-style') {
+        $('.cte-style').toggleClass('cte-style--disabled');
+        if ($('.cte-style').hasClass('cte-style--disabled')) {
+            value = 'normal';
+        }        
+    }
     if (attr == 'font-size') {
         $('#cte-result').css(attr, $(value).val() + 'px');
     } else {
