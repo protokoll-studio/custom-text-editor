@@ -1,8 +1,9 @@
 ### Import JS and Icons
 - Import the icon with `<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">`
-- Import the JS with : `<script src="custom-text-editor/circletype.min.js"></script>`
-- Import the JS with : `<script src="custom-text-editor/fittext.js"></script>`
-- Import the JS with : `<script src="custom-text-editor/custom-text-editor.js"></script>`
+- Import the style with : `<link rel="stylesheet" href="styles/custom-text-editor.css">`
+- Import the JS with : `<script src="scripts/circletype.min.js"></script>`
+- Import the JS with : `<script src="scripts/fittext.js"></script>`
+- Import the JS with : `<script src="scripts/custom-text-editor.js"></script>`
 
 ### Get the CUSTOM-TEXT-EDITOR
 Place this code in your code
