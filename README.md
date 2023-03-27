@@ -1,39 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" href="./custom-text-editor/custom-text-editor.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+### Import JS and Icons
+- Import the icon with `<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">`
+- Import the JS with : `<script src="custom-text-editor/circletype.min.js"></script>`
+- Import the JS with : `<script src="custom-text-editor/fittext.js"></script>`
+- Import the JS with : `<script src="custom-text-editor/custom-text-editor.js"></script>`
 
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+### Get the CUSTOM-TEXT-EDITOR
+Place this code in your code
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="custom-text-editor/circletype.min.js"></script>
-	<script src="custom-text-editor/fittext.js"></script>
-
-    <style>
-        /* To replace with tailwind */
-        .flex {
-            display: flex;
-        }
-        .p-2 {
-            padding: .5rem;
-        }
-        .px-2 {
-            padding-left: .5rem;
-            padding-right: .5rem;
-        }
-        .justify-between {
-            justify-content: space-between;
-        }
-        .items-center {
-            align-items: center;
-        }
-        .block {
-            display: block;
-        }
-    </style>
-  </head>
-  <body>
     <div id="cte">
         <div class="flex cte-separator p-2">
             <div><textarea class="p-2" onkeyup="cteUpdateText()">you text</textarea></div>
@@ -80,8 +53,3 @@
     </div>  
 
     <div id="cte-result"></div>
-
-    <!-- CTE SCRIPT -->
-	<script src="custom-text-editor/custom-text-editor.js"></script>
-  </body>
-</html>
