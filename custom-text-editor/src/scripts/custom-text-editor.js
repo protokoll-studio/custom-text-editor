@@ -59,3 +59,14 @@ function cteReset() {
     $('#cte-result').css('font-size', 'inherit');
     $('#cte-result').html($('#cte textarea').val());
 }
+
+/**
+ * Transform the div into a canvas
+ */
+function cteRefresh() {
+    html2canvas(document.querySelector("#cte-result")).then(canvas => {
+        $('#ctetxt2image').remove();
+        canvas.id = 'ctetxt2image',
+        document.body.appendChild(canvas)
+    });
+}

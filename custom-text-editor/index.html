@@ -9,6 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="src/scripts/circletype.min.js"></script>
 	<script src="src/scripts/fittext.js"></script>
+	<script src="src/scripts/html2canvas.min.js"></script>
 
     <style>
         /* To replace with tailwind */
@@ -75,10 +76,12 @@
     
         <div class="flex p-2">
             <span onclick="cteReset()" class="cte-reset">Réinitialiser</span>
+            <span onclick="cteRefresh()" class="cte-refresh">Actualiser</span>
         </div>
     
     </div>  
 
+    <h3>Div</h3>
     <div id="cte-result"></div>
 
     <!-- CTE SCRIPT -->

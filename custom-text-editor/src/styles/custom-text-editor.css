@@ -30,11 +30,11 @@
 }
 #cte-result {
     width: 350px;
-    height: 20px;
     border: 1px solid grey;
     display: block;
 }
-#cte .cte-reset:hover {
+#cte .cte-reset:hover,
+#cte .cte-refresh:hover {
     cursor: pointer;
     opacity: .7;
 }
