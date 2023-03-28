@@ -46,6 +46,7 @@ function customTextEditor(attr, value) {
  */
 function cteUpdateText() {
     $('#cte-result').html($('#cte textarea').val());
+    cteRefresh();
 }
 
 /**
