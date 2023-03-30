@@ -1,3 +1,6 @@
+## Important
+This "Tool" use the same class name as Tailwind but Tailwind is not installed because... maybe you don't want to deal with Tailwind. So, be sure to remove those classname OR update your taiwind.css file
+
 ### Import JS and Icons
 - Import the icon with `<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">`
 - Import the style with : `<link rel="stylesheet" href="src/styles/custom-text-editor.css">`
