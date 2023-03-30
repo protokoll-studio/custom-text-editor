@@ -19,7 +19,6 @@ function customTextEditor(attr, value) {
 
     if (attr == 'font-family') {
         var fontName = $('#cte .cte-font option:selected').attr('value');
-        console.log()
         $('#cte-result').css('font-family', '"' + fontName + '"', 'important');
     }
 

@@ -1,3 +1,8 @@
+# About Custom Text Editor
+Custom Text Editor (or CTE) is a simple tool that allow you to change the style of a text (font, style, colors, weight, size and the curves by using CircleType).
+
+The goal is to apply the result in a canvas by using "html2canvas" . This step is optional and you can adjust it or remove it
+
 ## Important
 This "Tool" use the same class name as Tailwind but Tailwind is not installed because... maybe you don't want to deal with Tailwind. So, be sure to remove those classname OR update your taiwind.css file
 
