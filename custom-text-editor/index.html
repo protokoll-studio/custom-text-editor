@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
       
     <link rel="stylesheet" href="src/styles/custom-text-editor.css">
+    <link rel="stylesheet" href="src/styles/custom-text-editor-font-family.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="src/scripts/circletype.min.js"></script>
 	<script src="src/scripts/fittext.js"></script>
@@ -40,6 +41,13 @@
             <div><textarea class="p-2" onkeyup="cteUpdateText()">you text</textarea></div>
         </div>
         <div class="flex items-center cte-separator">
+            <div class="px-2 grow">Font</div>
+            <select name="choose-font" class="cte-font" onchange="customTextEditor('font-family', this);">
+                <option value="Block 2" selected>Block 2</option>
+                <option value="Castle">Castle</option>
+            </select> 
+        </div>
+        <div class="flex items-center cte-separator">
             <div class="px-2">
                 <select name="choose-color" onchange="customTextEditor('color', this);">
                     <option value="000000" selected>Noir</option>
@@ -49,10 +57,10 @@
                 </select>
             </div>
             <div class="cte-text-edit text-center grow py-4 cte-weight cte-weight--disabled" onclick="customTextEditor('font-weight', 'bold');" ><i class="ri-bold"></i></div>
-            <div class="cte-text-edit text-center grow py-4 cte-style cte-style--disabled" onclick="customTextEditor('font-style', 'italic');"><i class="ri-italic"></i></div>
-            <div class="cte-text-edit text-center grow py-4" onclick="customTextEditor('text-align', 'left');"><i class="ri-align-left"></i></div>
+ <div class="cte-text-edit text-center grow py-4" onclick="customTextEditor('text-align', 'left');"><i class="ri-align-left"></i></div>
             <div class="cte-text-edit text-center grow py-4" onclick="customTextEditor('text-align', 'center');"><i class="ri-align-center"></i></div>
-            <div class="cte-text-edit text-center grow py-4" onclick="customTextEditor('text-align', 'right');"><i class="ri-align-right"></i></div>
+            <div class="cte-text-edit text-center grow py-4" onclick="customTextEditor('text-align', 'right');"><i class="ri-align-right"></i></div>            <div class="cte-text-edit text-center grow py-4 cte-style cte-style--disabled" onclick="customTextEditor('font-style', 'italic');"><i class="ri-italic"></i></div>
+           
             <div class="cte-text-edit text-center grow py-4" onclick="customTextEditor('text-align', 'justify');"><i class="ri-align-justify"></i></div>
         </div>
         <div class="flex items-center cte-separator">

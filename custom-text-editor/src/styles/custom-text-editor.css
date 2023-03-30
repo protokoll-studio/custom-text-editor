@@ -46,6 +46,7 @@
     white-space: pre-wrap;
     overflow-wrap: break-word;
 }
+#cte .cte-refresh:hover,
 #cte .cte-reset:hover {
     cursor: pointer;
     opacity: .7;

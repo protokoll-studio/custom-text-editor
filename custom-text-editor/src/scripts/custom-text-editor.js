@@ -16,6 +16,13 @@ function customTextEditor(attr, value) {
             value = 'normal';
         }        
     }
+
+    if (attr == 'font-family') {
+        var fontName = $('#cte .cte-font option:selected').attr('value');
+        console.log()
+        $('#cte-result').css('font-family', '"' + fontName + '"', 'important');
+    }
+
     if (attr == 'font-size') {
         $('#cte-result').css(attr, $(value).val() + 'px');
     } else {
