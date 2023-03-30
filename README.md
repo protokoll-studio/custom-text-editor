@@ -5,6 +5,9 @@
 - Import the JS with : `<script src="src/scripts/fittext.js"></script>`
 - Import the JS with : `<script src="src/scripts/custom-text-editor.js"></script>`
 
+You can add your own fonts in the folder `src/fonts`. 
+Then import them in the file caled `custom-text-editor-font-family.css`
+
 ### Get the CUSTOM-TEXT-EDITOR
 Place this code in your code
 
